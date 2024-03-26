@@ -665,9 +665,7 @@ NS_INLINE UIViewController *rootViewController(void) {
 - (void)setVolume:(FLTVolumeMessage *)input error:(FlutterError **)error {
   FLTVideoPlayer *player = self.playersByTextureId[input.textureId];
   [player setVolume:input.volume.doubleValue];
-  [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback
-                                     withOptions:AVAudioSessionCategoryOptionMixWithOthers
-                                           error:nil];
+  [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
 }
 
 - (void)setPlaybackSpeed:(FLTPlaybackSpeedMessage *)input error:(FlutterError **)error {
