@@ -13,7 +13,7 @@ flutter:
   plugin:
     platforms:
       android:
-        default_package: video_player_android
+        default_package: video_player_m3_exo
       ios:
         default_package: video_player_avfoundation
       web:
@@ -23,8 +23,8 @@ dependencies:
   flutter:
     sdk: flutter
   html: ^0.15.0
-  video_player_android: ^2.3.5
   video_player_avfoundation: ^2.2.17
+  video_player_m3_exo: ^1.0.0
   video_player_platform_interface: ">=6.1.0 <7.0.0"
   video_player_web: ^2.0.0
 

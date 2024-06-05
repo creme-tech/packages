@@ -242,7 +242,7 @@ class MiniController extends ValueNotifier<VideoPlayerValue> {
         );
         break;
     }
-
+    await _platform.setMixWithOthers(true);
     _textureId = (await _platform.create(dataSourceDescription)) ??
         kUninitializedTextureId;
     _creatingCompleter!.complete(null);
