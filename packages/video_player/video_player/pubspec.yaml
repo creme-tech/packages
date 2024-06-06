@@ -23,7 +23,11 @@ dependencies:
   flutter:
     sdk: flutter
   html: ^0.15.0
-  video_player_avfoundation: ^2.2.17
+  video_player_avfoundation:
+    git:
+      url: https://github.com/creme-tech/packages.git
+      ref: feat/setup-avplayer-sleep-as-false
+      path: packages/video_player/video_player_avfoundation
   video_player_m3_exo:
     git:
       url: https://github.com/creme-tech/video-player-android.git
